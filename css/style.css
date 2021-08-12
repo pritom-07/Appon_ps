@@ -1,0 +1,1275 @@
+/*
+. common css
+. common underline css
+. font import css
+. menu css
+. banner css
+. abaout us css
+. awesome feature  css
+
+
+
+
+
+
+*/
+/* /////////===========
+    table of content ends
+==========///////////// */
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+
+}
+
+::selection{
+    background: #744fa0;
+    color: #fff;
+}
+
+img{
+    vertical-align: middle;
+
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+ul{
+    list-style: none;
+}
+
+.full-wrapper{
+    width: 100%;
+   
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+  
+}
+
+
+.big_title{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #353535;
+    padding: 0px 0px 8px;
+}
+
+/* ///////////==========
+   common css ends
+===========/////////// */
+
+.line1,.line2{
+    display:inline-block;
+    width: 44px;
+    height: 1px;
+    background:#353535;
+    position: relative;
+}
+
+.line1::before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 49px;
+    height: 1px;
+    background: #353535;
+
+}
+
+.line2::before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 49px;
+    height: 1px;
+    background: #353535;
+
+}
+
+
+/* ///////////==========
+   common underline css ends
+===========/////////// */
+
+@font-face {
+    font-family: 'myriad-reg';
+    src: url(../fonts/myriad-pro/MYRIADPRO-REGULAR.OTF);
+}
+
+
+/* ///////////==========
+   font import css ends
+===========/////////// */
+
+
+.menu-bg{
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    
+
+
+}
+
+.menu-bg .menu{
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.menu-bg .menu .logo{
+    height: 180px;
+    width: 270px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-bg .menu .menu-list{
+    width: 600px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.menu-bg .menu .menu-list ul{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.menu-bg .menu .menu-list ul li{
+    width: 95px;
+    height: 30px;
+    text-align: center;
+}
+
+.menu-bg .menu .menu-list ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform:capitalize;
+    line-height: 30px;
+    position: relative;
+    transition: all linear 0.4s;
+
+}
+
+.menu-bg .menu .menu-list ul li a:hover{
+    color:#744fa0;
+}
+
+.menu-bg .menu .menu-list ul li  .active{
+    color: #744fa0;
+}
+
+.menu-bg .menu .menu-list ul li  .active::before{
+    content: '';
+    width: 15px;
+    height: 1px;
+    position: absolute;
+    background: #744fa0;
+    color:#744fa0;
+    left:0;
+    bottom:-5px;
+  
+}
+
+.menu-bg .menu .menu-list ul li .he::before{
+    content: '';
+    width: 0px;
+    height: 1px;
+    position: absolute;
+    background: #744fa0;
+    left:0;
+    bottom:-5px;
+    transition: all linear 0.6s;
+}
+
+.menu-bg .menu .menu-list ul li .he:hover::before{
+    width: 15px;
+    
+}
+
+.menu-bg .menu .menu-list ul li:last-child{
+    width: 110px;
+   
+}
+
+
+.menu-bg .menu .menu-list ul li:last-child a{
+    font-weight: 700;
+    display: block;
+    background: #744fa0;
+    border-radius: 2px;
+   
+}
+
+.menu-bg .menu .menu-list ul li:last-child a:hover{
+    background: #fff;;
+}
+
+
+
+
+
+
+
+/* ////////////============
+   menu css ends
+==============///////////// */
+.banner-bg{
+    height: 700px;
+    background: url('../images/banner-bg.jpg') no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+
+}
+
+.banner-bg::before{
+    content: '';
+    width: 674px;
+    height: 494px;
+    background: url('../images/banner-over.png') no-repeat center / cover;
+    position: absolute;
+    bottom: 40px;
+    right: 50%;
+    z-index: -2;
+}
+
+.banner-bg::after{
+    content: '';
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+}
+
+.banner-bg .banner-icon{
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translate(-3%, -50%);
+    text-align: center;
+}
+
+.banner-bg .banner-icon a{
+    width: 18px;
+    height: 18px;
+    font-size: 20px;
+    line-height: 60px;
+    transition: all linear 0.4s;
+
+
+}
+
+.banner-bg .banner-icon a:hover{
+    color:#744fa0;
+}
+
+.banner-bg .banner{
+    height: 700px;
+    display: flex;
+    justify-content: right;
+
+}
+
+.banner-bg .banner .banner-content{
+    width: 470px;
+    height: 700px;
+    text-align: right;
+    color: #fff;
+  
+}
+
+.banner-bg .banner .banner-content h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 61px;
+    text-transform: uppercase;
+    padding: 230px  0px 15px;
+}
+
+.banner-bg .banner .banner-content h1 span{
+    color: #744fa0;
+}
+
+.banner-bg .banner .banner-content h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 35px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0px  0px 20px;
+}
+
+.banner-bg .banner .banner-content h2::before{
+    content: '';
+    width: 200px;
+    height: 1px;
+    background: #f1f1f1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+   
+}
+
+.banner-bg .banner .banner-content .para{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 30px  0px 60px;
+    
+}
+
+.banner-bg .banner .banner-content a{
+    width: 189px;
+    height: 59px;
+    border-radius: 4px;
+    display:inline-block;
+    position: relative;
+    margin-left: 8px;
+    transition: all linear 0.4s;
+    
+}
+
+
+.banner-bg .banner .banner-content .apple-btn{
+    background: #fff;
+    color: #353535;
+}
+
+
+.banner-bg .banner .banner-content a div{
+    width: 56px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding-left: 6px;
+}
+
+.banner-bg .banner .banner-content a div i{
+    font-size: 33px;
+    line-height: 59px;
+}
+
+.banner-bg .banner .banner-content a p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    position: absolute;
+    left: 56px;
+    top: 10px;
+
+}
+
+.banner-bg .banner .banner-content a h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    position: absolute;
+    left: 56px;
+    top: 30px;
+}
+
+.banner-bg .banner .banner-content .android-btn{
+    background: #744fa0;
+    color: #fff;
+}
+
+.banner-bg .banner .banner-content .android-btn:hover{
+    background: #fff;
+    color: #744fa0;
+}
+.banner-bg .banner .banner-content .apple-btn{
+    background: #fff;
+    color: #353535;
+}
+
+.banner-bg .banner .banner-content .apple-btn:hover{
+    background: #744fa0;
+    color: #fff;
+}
+
+
+
+/* ////////////============
+   banner css ends
+==============///////////// */
+.about_us_bg{
+    height: 540px;
+}
+
+.about_us_bg .about_us{
+    height: 540px;
+    display: flex;
+    flex-direction: row;
+}
+
+.about_us_bg .about_us .about_us_txt{
+    width: 770px;
+    height: 540px;
+    text-align: center;
+    padding: 150px 0px 0px;
+}
+
+.about_us_bg .about_us .about_us_txt p{
+    font-family: 'myriad-reg';
+    font-size: 14px;
+    line-height: 20px;
+    color: #353535;
+    padding: 25px 98px 0px;
+}
+
+
+
+.about_us_bg .about_us .about_us_mobile{
+    width: 400px;
+    height: 540px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+/* ////////////============
+   about us css ends
+==============///////////// */
+.features_bg{
+    height: 655px;
+    background: #f1f1f1;
+}
+
+.features_bg .features{
+    height: 655px;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features_bg .features .f_item{
+    width: 370px;
+    height: 655px;
+}
+
+.features_bg .features .features_item1{
+    text-align: left;
+    padding: 116px 0px 0px;
+   
+  
+}
+
+.features_bg .features .features_item1 a{
+    width: 326px;
+    height: 102px;
+    display:block;
+    color:#353535;
+    position: relative;
+    transition: all linear 0.4s;
+  
+}
+
+.features_bg .features .features_item1 a:hover{
+    color: #744fa0;
+}
+
+.features_bg .features .features_item1 a:hover::before{
+    background: #744fa0;
+    width: 370px;
+}
+.features_bg .features .features_item1 .underline::before{
+    content: '';
+    width: 270px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #353535;
+    transition: all linear 0.4s;
+}
+
+.features_bg .features .features_item1 .big-underline::before{
+    content: '';
+    width: 370px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #353535;
+}
+
+.features_bg .features .features_item1 a div{
+    width: 52px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.features_bg .features .features_item1 a div i {
+   font-size: 42px;
+   line-height: 104px;
+}
+
+.features_bg .features .features_item1 a h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 52px;
+    top:28px;
+
+ }
+
+ .features_bg .features .features_item1 a p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    position: absolute;
+    left: 52px;
+    top:55px;
+
+ }
+ 
+.features_bg .features .features_item2{
+    text-align: center;
+    padding-top: 55px;
+}
+
+.features_bg .features .features_item2 .awesome{
+    padding-top:28px;
+}
+
+.features_bg .features .features_item3{
+    color: #353535;
+    text-align: right;
+    padding-top: 215px;
+}
+
+.features_bg .features .features_item3 h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+
+}
+
+.features_bg .features .features_item3 p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 20px 0px 27px;
+    
+}
+
+
+/* ////////////============
+ awesome feature  css ends
+==============///////////// */
+.screenshots_bg{
+    height: 730px;
+}
+
+.screenshots_bg .screenshots{
+    height: 730px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.screenshots_bg .screenshots .screenshot_item{
+    display: block;
+    margin: 0 auto;
+    padding: 50px 0px 20px;
+}
+
+.screenshots_bg .screenshots ul li{
+    display: inline-block;
+    color: #353535;
+
+}
+
+.screenshots_bg .screenshots ul li:nth-child(3){
+    color: #744fa0;
+
+}
+
+
+
+/* ////////////============
+ screenshots  css ends
+==============///////////// */
+.watch_bg{
+    height: 710px;
+    background:url('../images/watch-video.jpg') no-repeat center;
+    background-size: 100% 70%;
+    position: relative;
+    z-index: 1;
+}
+
+.watch_bg::before{
+    content: '';
+    width: 100%;
+    height: 70%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 15%;
+    left: 0;
+    z-index: -1;
+   
+    
+}
+
+.watch_bg .watch{
+    height: 710px;
+    text-align: center;
+   
+}
+
+.watch_bg .watch i{
+    display:block;
+    line-height: 600px;
+    font-size: 80px;
+    color: #fff;
+}
+
+
+/* ////////////============
+ watch video  css ends
+==============///////////// */
+.pricing_bg{
+    height: 638px;
+}
+
+.pricing_bg .pricing{
+    height: 638px;
+    text-align: center;
+}
+
+.pricing_bg .pricing .pricing_item{
+    width: 100%;
+    height: 520px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.pricing_bg .pricing .pricing_item .pricint_itm{
+    width: 270px;
+    height: 407px;
+    border-radius: 20px;
+    
+  
+}
+
+
+
+.pricing_bg .pricing .pricing_item .pricint_itm .top{
+    width: 100%;
+    height: 60px;
+    background: #f1f1f1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: all linear 0.4s;
+    
+}
+
+
+.pricing_bg .pricing .pricing_item .pricint_itm:hover .top{
+    background: #744fa0;
+    
+}
+
+.pricing_bg .pricing .pricing_item .pricint_itm:hover .top h3{
+    color: #fff;
+    
+}
+.pricing_bg .pricing .pricing_item .pricint_itm .top  h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #353535;
+    text-align: center;
+    line-height: 60px;
+    
+}
+
+.pricing_bg .pricing .pricing_item .pricint_itm .middle{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pricing_bg .pricing .pricing_item .pricint_itm .middle .ring{
+
+    width: 120px;
+    height: 120px;
+    border: 3px solid #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing_bg .pricing .pricing_item .pricint_itm .middle .ring  h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #353535;
+    font-size: 50px;
+}
+
+.pricing_bg .pricing .pricing_item .pricint_itm .middle .ring  h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #353535;
+    font-size: 30px;
+}
+
+.pricing_bg .pricing .pricing_item .pricint_itm .middle .ring h1 span{
+    font-size: 20px;
+}
+
+.pricing_bg .pricing .pricing_item .pricint_itm .middle .ring h3{
+    font-size: 15px;
+}
+
+
+
+
+.pricing_bg .pricing .pricing_item .pricint_itm .bottom{
+    width: 100%;
+    height: 187px;
+    background: #f1f1f1;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+    position: relative;
+    padding-top: 30px;
+    
+}
+
+.pricing_bg .pricing .pricing_item .pricint_itm .bottom p{
+    font-family: 'myriad-reg'; 
+    font-size: 14px;  
+    color: #353535;
+    line-height: 30px;
+}
+
+.pricing_bg .pricing .pricing_item .pricint_itm .bottom .button{
+    width: 94px;
+    height: 36px;
+    border: 1px solid #353535;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 36px;
+    background: #fff;
+    border-radius: 4px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50% ,-110%);
+    
+
+}
+
+.pricing_bg .pricing .pricing_item .pricint_itm .bottom .button a{
+   display: block;
+   border-radius: 4px;
+   color: #353535;
+   transition: all linear 0.4s;
+}
+
+.pricing_bg .pricing .pricing_item .pricint_itm:hover a{
+    background: #744fa0;
+}
+
+.pricing_bg .pricing .pricing_item .pricint_itm .bottom .button a:hover{
+    background: #6d4b96;
+    color: #fff;
+}
+
+
+/* ////////////============
+ pricing plan css ends
+==============///////////// */
+.team-bg{
+    height: 755px;
+}
+
+.team-bg .team-items{
+    height: 755px;
+    text-align: center;
+}
+
+.team-bg .team-items .team{
+    width:100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-bg .team-items .team .team-member{
+    width: 370px;
+    height: 557px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.team-bg .team-items .team .team-member .team-com{
+    width: 370px;
+    height: 370px;
+    position: relative;
+    transition: all linear 0.5s;
+    
+    
+}
+
+.team-bg .team-items .team .team-member .team-com:hover{
+
+    transform: translateY(-26%);
+}
+
+.team-bg .team-items .team .team-member .team-com .t-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transform: scaleY(0);
+    transition: all linear 0.5s;  
+}
+
+.team-bg .team-items .team .team-member .team-com .t-overlay ul {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-bg .team-items .team .team-member .team-com .t-overlay ul li{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.team-bg .team-items .team .team-member .team-com .t-overlay ul li a{
+    display: block;
+    border-radius: 50%;
+    color: #353535;
+    background: #fff;
+    font-size: 24px;
+    line-height: 50px;
+    transition: all linear 0.3s;
+}
+
+.team-bg .team-items .team .team-member .team-com .t-overlay ul li a:hover{
+    color: #fff;
+    background: #1da1f2;
+}
+.team-bg .team-items .team .team-member .team-com:hover .t-overlay{
+    transform: scaleY(1);
+}
+
+.team-bg .team-items .team .team-member .team-com .team-text{
+    width: 370px;
+    height: 187px;
+    position: absolute;
+    top: 74%;
+    border:1px solid #cccccc;
+    border-radius: 10px;
+    transform: scale(0); 
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.5s;
+    color: #353535;
+    
+}
+
+.team-bg .team-items .team .team-member .team-com .team-text h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 29px 0px 0px;
+
+}
+.team-bg .team-items .team .team-member .team-com .team-text h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 9px 0px 0px;
+
+}
+
+.team-bg .team-items .team .team-member .team-com .team-text p{
+    font-family: 'myriad-reg';
+    font-size: 14px;
+    line-height: 20px;
+    padding: 11px 60px 0px;
+
+}
+
+.team-bg .team-items .team .team-member .team-com:hover .team-text{
+    transform: scale(1) translateY(50%);
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/* ////////////============
+awesome team css ends
+==============///////////// */
+
+.feedback-bg{
+    height: 760px;
+    background: url(../images/feedback-bg.jpg) no-repeat center;
+    background-size: 100% 75%;
+    position: relative;
+    z-index: 1;
+}
+
+.feedback-bg::before{
+    content: '';
+    width: 100%;
+    height: 75%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 12.5%;
+    left: 0;
+    z-index: -1;
+   
+    
+}
+
+.feedback-bg .feedback{
+    height: 760px;
+    text-align: center;
+}
+
+.feedback-bg .feedback .feedback-text{
+    width: 100%;
+    height:608px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.feedback-bg .feedback .feedback-text .message{
+    width: 800px;
+    height: 218px;
+    background: #f1f1f1;
+    border-radius: 20px;
+    position: relative;
+}
+
+.feedback-bg .feedback .feedback-text .message::before{
+    content: '';
+    position: absolute;
+    background: #f1f1f1;
+    width: 30px;
+    height: 30px;
+    top: 108%;
+    left: 50%;
+    transform: translate(-50%, -108%) rotate(45deg);
+    border-radius: 3px;
+
+}
+
+.feedback-bg .feedback .feedback-text .message p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    width: 668px;
+    transform: translate(-50%);
+    color:#353535;
+}
+
+.feedback-bg .feedback .feedback-text .message ul{
+   display: flex;
+   width: 87px;
+   height: 20px;
+   justify-content: space-between;
+   position: absolute;
+   left: 50%;
+   top: 128px;
+   transform: translate(-50%);
+
+}
+
+.feedback-bg .feedback .feedback-text .message ul li i{
+    font-size: 20px;
+    color: #744fa0;
+}
+
+
+.feedback-bg .feedback .feedback-text .message h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: absolute;
+    left: 50%;
+    top: 153px;
+    transform: translate(-50%) ;
+    color:#353535;
+}
+
+.feedback-bg .feedback .feedback-text .message h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translate(-50%);
+    color:#353535;
+}
+
+.feedback-bg .feedback .feedback-text .image{
+    width: 470px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.feedback-bg .feedback .feedback-text .image .img{
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+.feedback-bg .feedback .feedback-text .image .image1::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    
+
+} 
+
+.feedback-bg .feedback .feedback-text .image .image2{
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.feedback-bg .feedback .feedback-text .dot{
+    width: 74px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+
+}
+.feedback-bg .feedback .feedback-text .dot .dotted i{
+    font-size: 20px;
+   
+}
+
+.feedback-bg .feedback .feedback-text .dot .dot2{
+    color: #744fa0;
+}
+
+
+
+/* ////////////============
+user feedback css ends
+==============///////////// */
+.getintouch-bg{
+    height: 560px;
+}
+
+.getintouch-bg .getintouch{
+    height: 560px;
+    text-align: center;
+}
+
+.getintouch-bg .getintouch form .inputbox{
+    width: 100%;
+    height: 284px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 60px;
+}
+
+.getintouch-bg .getintouch form .inputbox .common{
+    width: 370px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.getintouch-bg .getintouch form .inputbox .common input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #718a71;
+    font-size: 25px;
+}
+
+.getintouch-bg .getintouch form .inputbox .text{
+    width: 1170px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.getintouch-bg .getintouch form .inputbox .text textarea{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #718a71;
+    font-size: 35px;
+}
+
+.getintouch-bg .getintouch form button{
+    display: inline-block;
+    width: 88px;
+    height: 33px;
+    background: #744fa0;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 30px;
+    transition: all linear 0.3s;
+}
+
+.getintouch-bg .getintouch form button:hover{
+    background: #fff;
+    color: #744fa0;
+    border: 1px solid #744fa0;
+    
+}
+
+
+
+
+/* ////////////============
+user feedback css ends
+==============///////////// */
+.bottom-bg{
+    height: 260px;
+    background: #353535;
+}
+
+.bottom-bg .bottom{
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-content: space-around;
+    align-items: center;
+}
+
+.bottom-bg .bottom .bottom-logo{
+    width: 228px;
+    height: 74px;
+}
+
+.bottom-bg .bottom ul{
+    width: 290px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.bottom-bg .bottom ul li{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.bottom-bg .bottom ul li a{
+    color: #353535;
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: all linear 0.3s;
+
+}
+
+.bottom-bg .bottom ul li a:hover{
+    background: #1da1f2;
+    color: #fff;
+}
+
+.bottom-bg .bottom p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+}
+
+.bottom-bg .bottom p span{
+    color: #744fa0;
+}
+/* ////////////============
+bottom css ends
+==============///////////// */
