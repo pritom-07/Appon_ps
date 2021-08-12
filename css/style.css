@@ -293,7 +293,7 @@ ul{
 .banner-bg .banner{
     height: 700px;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 
 }
 
@@ -302,6 +302,7 @@ ul{
     height: 700px;
     text-align: right;
     color: #fff;
+    
   
 }
 
